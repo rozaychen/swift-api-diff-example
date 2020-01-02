@@ -1,0 +1,15 @@
+name: SwiftAPIBreakage
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  buildAndCheckAPIBreakage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ltetzlaff/swift-api-diff@master
+        with:
+          against: master
+
