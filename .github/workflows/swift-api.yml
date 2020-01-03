@@ -12,4 +12,5 @@ jobs:
       - uses: ltetzlaff/swift-api-diff@master
         with:
           against: master
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
