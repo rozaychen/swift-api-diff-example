@@ -8,9 +8,10 @@ jobs:
   buildAndCheckAPIBreakage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ltetzlaff/swift-api-diff@master
+      - uses: actions/checkout@v2
         with:
-          against: master
+          ref: master
+          fetch-depth: 0
+      - uses: ltetzlaff/swift-api-diff@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
