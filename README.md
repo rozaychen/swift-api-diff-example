@@ -1,3 +1,3 @@
-# SwiftAPIDiffExample
+# swift-api-diff-example
 
-A description of this package.
+Example repo for [ltetzlaff/swift-api-diff](https://github.com/ltetzlaff/swift-api-diff)
