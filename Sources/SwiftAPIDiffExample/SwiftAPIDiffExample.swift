@@ -14,7 +14,7 @@ public enum SwiftAPIDiffExample {
     /// Some exported struct
     public struct ExampleStruct {
       /// Some public field
-      public let exampleField: ExampleType = 123
+      public let exampleField: Float = 123.0
 
       /// Some private field
       private let shouldntBeVisibleField1: ExampleType = 456
